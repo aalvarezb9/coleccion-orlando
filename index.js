@@ -107,3 +107,4 @@ function borrarPelicula() {
   pelicula.borrarPelicula(titulo);
   document.getElementById('titulo-pelicula-borrar').value = '';
 }
+// Libros
