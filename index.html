@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colección</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Colección</h1>
+    <div class="elementos">
+      <div class="peliculas">
+        <h1>Películas</h1>
+        <label for="titulo">Título</label>
+        <input id="titulo" name="titulo" type="text"><br>
+        <label for="duracion">Duración</label>
+        <input id="duracion" name="duracion" type="text"><br>
+        <label for="descripcion">Descripción</label>
+        <input id="descripcion" name="descripcion" type="text"><br>
+        <label for="clasificacion">Clasificación</label>
+        <input id="clasificacion" name="clasificacion" type="text"><br>
+        <label for="anio">Año</label>
+        <input id="anio" name="anio" type="text">
+        <button onclick="agregarPelicula()">Agregar película</button>
+        <hr>
+        <label for="ver-pelicula">Ingrese el título de la película que quiere ver</label>
+        <input id="ver-pelicula" name="ver-pelicula" type="text">
+        <button onclick="verPelicula()">Buscar película</button>
+        <p><b>Título: </b> <span id="titulo-encontrado"></span></p>
+        <p><b>Descripción: </b> <span id="descripcion-encontrada"></span></p>
+        <p><b>Clasificación: </b> <span id="clasificacion-encontrada"></span></p>
+        <p><b>Duración: </b> <span id="duracion-encontrada"></span></p>
+        <p><b>Año: </b> <span id="anio-encontrado"></span></p>
+        <hr>
+        <label for="titulo-pelicula-borrar">Ingrese el título de la película a borrar</label>
+        <input id="titulo-pelicula-borrar" name="titulo-pelicula-borrar" type="text">
+        <button onclick="borrarPelicula()">Borrar película</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
